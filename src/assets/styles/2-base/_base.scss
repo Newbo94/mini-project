@@ -1,0 +1,73 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: $base-paragraph;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $base-heading;
+    color: $font-color;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2rem;
+
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: $base-paragraph;
+    font-size: 1rem;
+    line-height: 1.46rem;
+    font-weight: 300;
+    color: $font-color;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-family: $base-paragraph;
+    font-size: 0.86rem;
+    font-weight: 300;
+    color: $link-color;
+&:hover{
+    color: $primary-color;
+    transition: $main-transition;
+}
+}
+
+hr {
+    border-color: 1px solid $font-color;
+    opacity: 0.2;
+    
+}
+
+
+//buttons 
+
+.primaryButton {
+    @include primary-button;
+}

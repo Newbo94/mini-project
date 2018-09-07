@@ -1,0 +1,76 @@
+.fullWidthWrapper {
+width: 100%;   
+ background-color: $darkgrey;
+ height: 45px;
+ display: flex;
+ justify-content: center;
+
+}
+
+.topBanner {
+    display: grid;
+    grid-template-columns: repeat(12, 70px);
+    max-width: 1170px;  
+    grid-column-gap: 30px;
+}
+
+.currencyDropdown {
+    grid-column-start: 1;
+    display: flex;
+    align-items: center;
+    font-size: 0.86rem;
+    color: $link-color;
+    transition: $main-transition;
+
+    cursor: pointer;
+    &--active {
+        margin: 0px 5px;
+    }
+    &__content {
+        display: none;
+        transition: $main-transition;
+
+    }
+    &:hover &__content {
+        position: absolute;
+        padding: 15px;
+        display: block;
+        top: 30px;
+        min-height: auto;
+        width: 100px;
+        background-color: $primary-bg;
+        transition: $main-transition;
+    }
+
+}
+.userLogin {
+    grid-column-start: 9; 
+    grid-column-end: 11;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cart {
+    grid-column-start: 11;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary-color;
+    color: $primary-bg;
+    height: 45px;
+    margin-left: 24px;
+    cursor: pointer;
+
+    &__count {
+        color: $primary-bg;
+    }
+
+     &__icon{
+        color: $primary-bg;
+     }
+     &__dropdown {
+         color: $primary-bg;
+     }
+}

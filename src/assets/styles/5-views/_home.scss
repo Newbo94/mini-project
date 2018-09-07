@@ -1,0 +1,24 @@
+.heroSection {
+    min-height: 855px;
+    background-color: $lightgrey;
+    background-image: url('./assets/images/standard/hero.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+   
+   
+    &__title {
+        font-size: 30rem;
+        font-weight: 800;
+        letter-spacing: 18rem;
+        margin-right: -18rem;
+        text-align: center
+    }
+    
+    .primary-button {
+        margin-top: 130px;
+    }
+
+}
