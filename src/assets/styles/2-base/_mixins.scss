@@ -1,3 +1,11 @@
+@mixin primary-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 70px);
+    max-width: 1170px;  
+    grid-column-gap: 30px;
+}
+
+
 //buttons 
 @mixin primary-button {
     padding: 22px 32px;

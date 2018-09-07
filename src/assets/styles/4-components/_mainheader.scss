@@ -8,10 +8,7 @@ width: 100%;
 }
 
 .topBanner {
-    display: grid;
-    grid-template-columns: repeat(12, 70px);
-    max-width: 1170px;  
-    grid-column-gap: 30px;
+   @include primary-grid;
 }
 
 .currencyDropdown {
@@ -74,3 +71,61 @@ width: 100%;
          color: $primary-bg;
      }
 }
+
+.mainheader {
+
+    background-color: $lightgrey;
+   
+    nav {
+        @include primary-grid;
+       
+       align-content: center;
+       align-items: center;
+       margin: auto;
+       height: 90px;
+         
+    }
+    .toplogo {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: 1.6rem;
+       
+        &__link {
+            font-size: 1.6rem;
+            color: #222222;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        & strong {
+            font-weight: 800;
+        }
+    }
+ 
+
+    .topNavigation {
+        grid-column-start: 6;
+        grid-column-end: 11;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+        text-transform: uppercase;
+        
+        &__dropdown {
+            display: none;
+        }
+        &__icon {
+            color: $link-color;
+        }
+    }
+    .searchbar {
+        grid-column-start: 11;
+        grid-column-end: 13;
+        width: 130px;
+    height: 30px;
+    padding: 7px 12px;
+    background-color: transparent;
+    border: 1px solid $borderwhite;
+    }
+}
+
+
