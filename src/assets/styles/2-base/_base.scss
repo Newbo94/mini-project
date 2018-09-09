@@ -5,11 +5,13 @@ html {
 body {
     font-family: $base-paragraph;
     overflow-x: hidden;
+    font-weight: 300;
+     color: $font-color;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: $base-heading;
-    color: $font-color;
+    color: $heading-color;
 }
 
 h1 {
@@ -25,16 +27,18 @@ h3 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: 0.86rem;
+    line-height: 1.6rem;
+
 }
 
 h6 {
-    font-size: 1.2rem;
+    font-size: 0.86rem;
 }
 
 p {
@@ -69,4 +73,9 @@ hr {
 //buttons 
 .primaryButton {
     @include primary-button;
+}
+
+
+strong {
+    font-weight: 800;
 }

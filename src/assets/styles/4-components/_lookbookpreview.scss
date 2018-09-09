@@ -1,0 +1,22 @@
+.lookbook {
+    background-repeat: no-repeat;
+    background-color: $lightgrey;
+    background-position: left 20px bottom;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+& div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 50px;
+    align-items: flex-end;
+}
+&__paragraph {
+    margin: 32px 0px;
+}
+& .primaryButton {
+    width: 180px;
+}
+}

@@ -15,7 +15,10 @@
     border-radius: 0px;
     max-width: 345px;
     font-size: 1.06rem; 
+    letter-spacing: 0.2em;
     cursor: pointer;
+    color: $font-color;
+    text-align: center;
 
     &:hover {
         background-color: $primary-color;
