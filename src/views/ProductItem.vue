@@ -23,11 +23,11 @@
                         <a href="#">Add a Review </a>
                     </div> |
                     <div class="singleproduct__share">
-                        Share:
-                    <a class="singleproduct__socialicon singleproduct__socialicon--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
-                    <a class="singleproduct__socialicon singleproduct__socialicon--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
-                    <a class="singleproduct__socialicon singleproduct__socialicon--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
-                    <a class="singleproduct__socialicon singleproduct__socialicon--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'pinterest' }" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
+                        <p>Share:</p>
+                    <a class="singleproduct__socialicon singleproduct__socialicon--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="2x" class="socialmediabox__icon">  </font-awesome-icon></a>
+                    <a class="singleproduct__socialicon singleproduct__socialicon--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="2x" class="socialmediabox__icon">  </font-awesome-icon></a>
+                    <a class="singleproduct__socialicon singleproduct__socialicon--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="2x" class="socialmediabox__icon">  </font-awesome-icon></a>
+                    <a class="singleproduct__socialicon singleproduct__socialicon--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'pinterest' }" size="2x" class="socialmediabox__icon">  </font-awesome-icon></a>
                     </div>
 
                 </div>

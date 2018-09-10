@@ -5,12 +5,30 @@
     margin-bottom: 64px;
 
     &__imgwrapper {
-        grid-column: 1 / span 6;
-        
+        grid-column: 1 / span 6;   
     }
-
     &__contentwrapper {
         grid-column: 7 / span 6;
+    }
+    &__review {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }   
+    &__share {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__price {
+        display: flex;
+        &--reduced {
+            text-decoration: line-through; 
+        }
+    }
+    &__tags {
+        display: flex;
+        align-items: center;
     }
 
 }
