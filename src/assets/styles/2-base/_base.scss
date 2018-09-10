@@ -1,3 +1,4 @@
+//fonts 
 html {
     font-size: 15px;
 }
@@ -6,10 +7,15 @@ body {
     font-family: $base-paragraph;
     overflow-x: hidden;
     font-weight: 300;
-     color: $font-color;
+    color: $font-color;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $base-heading;
     color: $heading-color;
 }
@@ -28,13 +34,11 @@ h3 {
 
 h4 {
     font-size: 2.4rem;
-
 }
 
 h5 {
     font-size: 0.86rem;
     line-height: 1.6rem;
-
 }
 
 h6 {
@@ -49,33 +53,34 @@ p {
     color: $font-color;
 }
 
-
-
 a {
     text-decoration: none;
     font-family: $base-paragraph;
     font-size: 0.86rem;
     font-weight: 300;
     color: $link-color;
-&:hover{
-    color: $primary-color;
-    transition: $main-transition;
-}
+
+    &:hover {
+        color: $primary-color;
+        transition: $main-transition;
+    }
 }
 
 hr {
     border-color: 1px solid $font-color;
     opacity: 0.2;
-    
 }
-
 
 //buttons 
 .primaryButton {
     @include primary-button;
 }
 
-
+//basic styling
 strong {
     font-weight: 800;
+}
+
+img {
+    width: 100%;
 }

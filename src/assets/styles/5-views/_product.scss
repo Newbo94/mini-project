@@ -1,0 +1,16 @@
+.singleproduct {
+    @include primary-grid(repeat(12, 1fr));
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    &__imgwrapper {
+        grid-column: 1 / span 6;
+        
+    }
+
+    &__contentwrapper {
+        grid-column: 7 / span 6;
+    }
+
+}

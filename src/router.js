@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Brand from './views/Brand.vue'
+import Product from './views/ProductItem.vue'
 
 Vue.use(Router)
 
@@ -19,6 +20,13 @@ export default new Router({
       name: 'brand',
       component: Brand
   
-    }
+    },
+    {
+    path: '/product',
+    name: 'product',
+    component: Product
+  }
+
+
     ]
 })

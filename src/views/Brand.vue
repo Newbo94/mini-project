@@ -33,12 +33,10 @@ Pellentesque sapien mi, tincidunt nec magna vitae, volutpat elementum odioni lor
 
             </div>
             <div class="brandcontent__award">
-
-          
-             <img class="brandcontent__awards" src="../assets/images/standard/award.png" alt="">
+            <img class="brandcontent__awards" src="../assets/images/standard/award.png" alt="">
              <img class="brandcontent__awards" src="../assets/images/standard/award2.png" alt="">
              <img class="brandcontent__awards" src="../assets/images/standard/award3.png" alt="">
-  </div>
+         </div>
 
         </section>
     </div>
