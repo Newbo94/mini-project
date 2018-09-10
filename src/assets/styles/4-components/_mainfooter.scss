@@ -16,6 +16,13 @@ footer {
         .footernavigation {
             display: flex;
             flex-direction: column;
+            &__title {
+                padding-bottom: 32px;
+                font-weight: 400;
+            }
+            &__link {
+                padding-bottom: 18px;
+            }
         }
 
         .promotion {

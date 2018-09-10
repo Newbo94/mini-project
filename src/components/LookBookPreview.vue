@@ -1,5 +1,5 @@
 <template>
-       <div class="lookbook" :style="{ backgroundImage: `url('${img}')` }">
+       <div class="lookbook" :style="{ backgroundImage: `url('${img}')` }"> 
             <div>
                 <h3 class="lookbook__heading">{{title}}</h3>
                 <p class="lookbook__paragraph">{{text}}</p>

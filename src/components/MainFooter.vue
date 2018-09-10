@@ -39,10 +39,10 @@
                 <h4 class="promotion__heading"><strong>award winner</strong> <br>Fashion awards 2016</h4>
             </div>
             <div class="socialmediabox">
-                     <a class="socialmediabox__link socialmediabox__link--hovered" href="#"><font-awesome-icon icon="heart" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
-                      <a class="socialmediabox__link socialmediabox__link--hovered" href="#"><font-awesome-icon icon="heart" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
-                       <a class="socialmediabox__link socialmediabox__link--hovered" href="#"><font-awesome-icon icon="heart" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
-                        <a class="socialmediabox__link socialmediabox__link--hovered" href="#"><font-awesome-icon icon="heart" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
+                    <a class="socialmediabox__link socialmediabox__link--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
+                    <a class="socialmediabox__link socialmediabox__link--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
+                    <a class="socialmediabox__link socialmediabox__link--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
+                    <a class="socialmediabox__link socialmediabox__link--hovered" href="#"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'pinterest' }" size="3x" class="socialmediabox__icon">  </font-awesome-icon></a>
 
             </div>
     </section>

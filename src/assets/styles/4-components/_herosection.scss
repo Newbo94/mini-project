@@ -1,0 +1,22 @@
+.herosection {
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/images/standard/hero_brand_page.jpg');
+    height: 450px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  
+    &__title {
+        color: $primary-bg;
+        margin-bottom: 50px;
+    }
+    &__subtitle {
+        color: $primary-bg;
+        font-size: 2rem;
+    }
+}

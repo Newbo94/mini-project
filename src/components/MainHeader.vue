@@ -51,7 +51,7 @@
                 </div>
                 </li>
                 <li><a href="#" class="topNavigation__link"> Womens</a></li>
-                <li><a href="#" class="topNavigation__link">The brand</a></li>
+                <li><router-link to="/brand" class="topNavigation__link">The Brand</router-link></li>
                 <li><a href="#" class="topNavigation__link">Local stores</a></li>
                 <li><a href="#" class="topNavigation__link">Look Book</a></li>
             </ul>

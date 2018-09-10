@@ -8,7 +8,8 @@ width: 100%;
 }
 
 .topBanner {
-   @include primary-grid;
+    @include primary-grid(repeat(12, 1fr));
+  
 }
 
 .currencyDropdown {
@@ -77,7 +78,7 @@ width: 100%;
     background-color: $lightgrey;
    
     nav {
-        @include primary-grid;
+        @include primary-grid(repeat(12, 1fr));
        
        align-content: center;
        align-items: center;

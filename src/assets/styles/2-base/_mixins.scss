@@ -1,8 +1,9 @@
-@mixin primary-grid {
+@mixin primary-grid($columnstemplate) {
     display: grid;
-    grid-template-columns: repeat(12, 70px);
+    grid-template-columns: $columnstemplate;
     max-width: 1170px;  
     grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 
 
