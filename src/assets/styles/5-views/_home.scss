@@ -61,6 +61,20 @@ grid-gap: 15px;
 
 
 }
+#tabs {
+    max-width: 1770px;
+    margin: auto;
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        margin: 50px 0px 62px 0px;
+        a {
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
 
 .lookbookwrapper {
     width: 100%;
