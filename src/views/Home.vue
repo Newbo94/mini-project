@@ -68,7 +68,7 @@ consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
 Elementum metus facilisis ut phasellu." :img="require('@/assets/images/standard/photo_silhouette.png')"></lookbookpreview>
             </section>
 
-            <tab></tab>
+            <tab></tab> 
     </div>
 </template>
 
