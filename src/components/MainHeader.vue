@@ -12,8 +12,8 @@
                 <font-awesome-icon icon="angle-down" class="currencyDropdown__icon"></font-awesome-icon>
             </ul>
             <div class="userLogin">
-                <a class="userLogin__item" href="#">Register</a>
-                <a class="userLogin__item" href="">Sign in</a>
+                <router-link to="/sign-up" class="userLogin__item"> Register</router-link>
+                <router-link to="/sign-up" class="userLogin__item"> Sign in </router-link>
             </div>
             <div class="cart">    
                <font-awesome-icon icon="shopping-cart" class="cart__icon"></font-awesome-icon>

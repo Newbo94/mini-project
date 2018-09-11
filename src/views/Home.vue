@@ -1,14 +1,12 @@
 <template>  
   <div class="home">
         <section class="heroSection">
+         <div class="heroSection__wrapper">   
             <h1 class="heroSection__title">AVE</h1>
-            <a class="primaryButton primaryButton--hovered">Shop men's collection</a>
+            <a class="heroSection__button primaryButton primaryButton--hovered">Shop men's collection</a>
+         </div> 
         </section>
-
         <hr>
-
-       
-
 <div id="tabs">
     <div class="tabs">
         <a v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'active' : '' ]">Popular</a>
