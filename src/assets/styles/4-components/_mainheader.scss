@@ -201,6 +201,8 @@
             justify-self: center;
         }
 
+        
+
         .topNavigation,
         .searchbar {
             display: none;
@@ -208,8 +210,26 @@
 
         .hamburgermenu {
             display: block;
-            grid-column: 11 / span 13;
-            display: block;
+            grid-column: 11 / span 1;
+            z-index: 30;
+             width: 50px;
+              border: none;
+               background-color: transparent;
+        }
+
+        .topNavigation.responsive {
+            width: 100%;
+            background-color: #fff;
+            grid-column: 1 / span 12;
+            position: absolute;
+            height: 500px;
+            z-index: 30;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
         }
     }
 }
+

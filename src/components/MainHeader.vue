@@ -24,7 +24,7 @@
         </div>
         <nav>
             <div class="toplogo"><router-link to="/" class="toplogo__link"><strong>Avenue </strong>Fashion</router-link> </div>
-            <ul class="topNavigation">
+            <ul id="mainnav" class="topNavigation">
                 <li class="topNavigation__dropdownlink"><a href="#" class="topNavigation__link">Men</a>
                     <font-awesome-icon icon="angle-down" class="topNavigation__icon"></font-awesome-icon>
 
@@ -79,8 +79,10 @@
                 <li><a href="#" class="topNavigation__link">Look Book</a></li>
             </ul>
             <input class="searchbar" type="search" placeholder="Search...">
-            <font-awesome-icon icon="bars" class="hamburgermenu" size="2x"></font-awesome-icon>
+              <button class="hamburgermenu" v-on:click="openMenu">
 
+            <font-awesome-icon icon="bars" class="hamburgermenu" size="2x"></font-awesome-icon>
+              </button>
         </nav>
     </header>
 
@@ -89,8 +91,19 @@
 
 
 
+
 <script>
 export default {
-  name: "MainHeader"
-};
+  name: "MainHeader",
+  methods: {
+      openMenu: function() {
+          var menu = document.getElementById("mainnav");
+     if (menu.className === "topNavigation") {
+        menu.className += " responsive";
+    } else {
+        menu.className = "topNavigation";
+    }
+  }
+}
+}
 </script>

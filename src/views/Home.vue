@@ -3,10 +3,11 @@
         <section class="heroSection">
          <div class="heroSection__wrapper">   
             <h1 class="heroSection__title">AVE</h1>
-            <a class="heroSection__button primaryButton primaryButton--hovered">Shop men's collection</a>
+            <a href="#" class="heroSection__button primaryButton primaryButton--hovered">Shop men's collection</a>
          </div> 
         </section>
         <hr>
+        
 <div id="tabs">
     <div class="tabs">
         <a v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'active' : '' ]">Popular</a>
@@ -17,22 +18,22 @@
     </div>
 
     <div class="content">
-        <div v-if="activetab === 1" class="tabcontent active">
+        <div v-if="activetab === 1" class="tabcontent">
               <div class="productwrapper">
-             <singleproduct v-for="products in product" :key="products.productId" :price="products.productPrice" :description="products.productSubName"  :title="products.productName" :img="products.productImg"></singleproduct>
+             <singleproduct v-for="products in product" :key="products.productId" :price="products.productPrice" :description="products.productSubName"  :title="products.productName" :img="products.productImg" :thumb1="products.productThumb[0]" :thumb2="products.productThumb[1]"></singleproduct>
             </div>
         </div>
         <div v-if="activetab === 2" class="tabcontent">
-           
+           Tab two
         </div>
         <div v-if="activetab === 3" class="tabcontent">
-            Content for tab three
+           Tab three
         </div>
            <div v-if="activetab === 4" class="tabcontent">
-            Content for tab four
+           Tab four
         </div>
            <div v-if="activetab ===5" class="tabcontent">
-            Content for tab five
+            Tab five
         </div>
     </div>
 </div>
@@ -58,24 +59,15 @@ Elementum metus facilisis ut phasellu." :img="require('@/assets/images/standard/
 <script>
 import axios from "axios";
 import singleproduct from "@/components/SingleProduct.vue";
-import lookbookpreview from '@/components/LookBookPreview.vue';
+import lookbookpreview from "@/components/LookBookPreview.vue";
 
 export default {
   name: "home",
-  data() {
-            return {
- activetab: 1,
-            };
-            },
 
   components: {
     singleproduct,
-    lookbookpreview,
-    
-
+    lookbookpreview
   },
-
-
 
   mounted() {
     this.getData();
@@ -86,7 +78,12 @@ export default {
         .get("products.json")
         .then(response => (this.product = response.data));
     }
+  },
+
+  data() {
+    return {
+      activetab: 1
+    }
   }
-    
 };
 </script>
