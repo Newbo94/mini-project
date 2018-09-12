@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Brand from './views/Brand.vue'
 import Product from './views/ProductItem.vue'
 import signup from './views/sign-up.vue'
+import test from './views/test.vue'
 
 Vue.use(Router)
 
@@ -20,20 +21,24 @@ export default new Router({
       path: '/brand',
       name: 'brand',
       component: Brand
-  
+
     },
     {
-    path: '/product',
-    name: 'product',
-    component: Product
-  },
+      path: '/product',
+      name: 'product',
+      component: Product
+    },
 
-  {
-    path: '/sign-up',
-    name: 'signup',
-    component: signup
-  }
+    {
+      path: '/sign-up',
+      name: 'signup',
+      component: signup
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test
+    }
 
-
-    ]
+  ]
 })

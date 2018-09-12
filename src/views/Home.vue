@@ -17,30 +17,13 @@
     </div>
 
     <div class="content">
-        <div v-if="activetab === 1" class="tabcontent">
+        <div v-if="activetab === 1" class="tabcontent active">
               <div class="productwrapper">
-                    <singleproduct :img="require('@/assets/images/standard/item2.png')" price="£89,99" title="Womens burnt orange casual tee  £29.95" description="Classic casual t-shirt for women on the move. 
-            100% cotton.
-            A hard-wearing sports t-shirt with microvent technology." :thumb1="require('@/assets/images/standard/thumb-back.png')" :thumb2="require('@/assets/images/standard/thumb-front.png')" ></singleproduct> 
-                    <singleproduct :img="require('@/assets/images/standard/item1.png')" price="£89,99" title="Womens burnt orange casual tee  £29.95" description="Classic casual t-shirt for women on the move. 
-            100% cotton.
-            A hard-wearing sports t-shirt with microvent technology." ></singleproduct> 
-                    <singleproduct :img="require('@/assets/images/standard/item3.png')" price="£89,99" title="Womens burnt orange casual tee  £29.95" description="Classic casual t-shirt for women on the move. 
-            100% cotton.
-            A hard-wearing sports t-shirt with microvent technology." ></singleproduct> 
-                    <singleproduct :img="require('@/assets/images/standard/item4.png')" price="£89,99" title="Womens burnt orange casual tee  £29.95" description="Classic casual t-shirt for women on the move. 
-            100% cotton.
-            A hard-wearing sports t-shirt with microvent technology." ></singleproduct> 
-                    <singleproduct :img="require('@/assets/images/standard/item5.png')" price="£89,99" title="Womens burnt orange casual tee  £29.95" description="Classic casual t-shirt for women on the move. 
-            100% cotton.
-            A hard-wearing sports t-shirt with microvent technology." ></singleproduct> 
-                    <singleproduct :img="require('@/assets/images/standard/item6.png')" price="£89,99" title="Womens burnt orange casual tee  £29.95" description="Classic casual t-shirt for women on the move. 
-            100% cotton.
-            A hard-wearing sports t-shirt with microvent technology." ></singleproduct> 
+             <singleproduct v-for="products in product" :key="products.productId" :price="products.productPrice" :description="products.productSubName"  :title="products.productName" :img="products.productImg"></singleproduct>
             </div>
         </div>
         <div v-if="activetab === 2" class="tabcontent">
-            Content for tab two
+           
         </div>
         <div v-if="activetab === 3" class="tabcontent">
             Content for tab three
@@ -73,6 +56,7 @@ Elementum metus facilisis ut phasellu." :img="require('@/assets/images/standard/
 </template>
 
 <script>
+import axios from "axios";
 import singleproduct from "@/components/SingleProduct.vue";
 import lookbookpreview from '@/components/LookBookPreview.vue';
 
@@ -80,7 +64,7 @@ export default {
   name: "home",
   data() {
             return {
- activetab: 1 
+ activetab: 1,
             };
             },
 
@@ -90,6 +74,19 @@ export default {
     
 
   },
+
+
+
+  mounted() {
+    this.getData();
+  },
+  methods: {
+    getData() {
+      axios
+        .get("products.json")
+        .then(response => (this.product = response.data));
+    }
+  }
     
 };
 </script>
