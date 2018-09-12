@@ -62,7 +62,7 @@ consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
 Elementum metus facilisis ut phasellu." :img="require('@/assets/images/standard/men_look_book.png')"></lookbookpreview>
               <lookbookpreview title="Men’s lookbook" text="Lorem ipsum dolor sit amet eras facilisis
 consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-Elementum metus facilisis ut phasellu." :img="require('@/assets/images/standard/men_look_book.png')"></lookbookpreview>
+Elementum metus facilisis ut phasellu." :img="require('@/assets/images/standard/women_look_book.png')"></lookbookpreview>
       <lookbookpreview title="Men’s lookbook" text="Lorem ipsum dolor sit amet eras facilisis
 consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
 Elementum metus facilisis ut phasellu." :img="require('@/assets/images/standard/photo_silhouette.png')"></lookbookpreview>

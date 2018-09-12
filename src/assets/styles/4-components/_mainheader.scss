@@ -1,15 +1,13 @@
 .fullWidthWrapper {
-width: 100%;   
- background-color: $darkgrey;
- height: 45px;
- display: flex;
- justify-content: center;
-
+    width: 100%;
+    background-color: $darkgrey;
+    height: 45px;
+    display: flex;
+    justify-content: center;
 }
 
 .topBanner {
     @include primary-grid(repeat(12, 1fr));
-  
 }
 
 .currencyDropdown {
@@ -19,16 +17,17 @@ width: 100%;
     font-size: 0.86rem;
     color: $link-color;
     transition: $main-transition;
-
     cursor: pointer;
+
     &--active {
         margin: 0px 5px;
     }
+
     &__content {
         display: none;
         transition: $main-transition;
-
     }
+
     &:hover &__content {
         position: absolute;
         padding: 15px;
@@ -39,10 +38,10 @@ width: 100%;
         background-color: $primary-bg;
         transition: $main-transition;
     }
-
 }
+
 .userLogin {
-    grid-column-start: 9; 
+    grid-column-start: 9;
     grid-column-end: 11;
     display: flex;
     align-items: center;
@@ -65,68 +64,113 @@ width: 100%;
         color: $primary-bg;
     }
 
-     &__icon{
+    &__icon {
         color: $primary-bg;
-     }
-     &__dropdown {
-         color: $primary-bg;
-     }
+    }
+
+    &__dropdown {
+        color: $primary-bg;
+    }
 }
 
 .mainheader {
-
     background-color: $lightgrey;
-   
+
     nav {
         @include primary-grid(repeat(12, 1fr));
-       
-       align-content: center;
-       align-items: center;
-       margin: auto;
-       height: 90px;
-         
+        align-content: center;
+        align-items: center;
+        margin: auto;
+        height: 90px;
     }
+
     .toplogo {
         grid-column-start: 1;
         grid-column-end: 4;
         font-size: 1.6rem;
-       
+
         &__link {
             font-size: 1.6rem;
             color: #222222;
             text-transform: uppercase;
             font-weight: 300;
         }
+
         & strong {
             font-weight: 800;
         }
     }
- 
 
     .topNavigation {
         grid-column-start: 6;
         grid-column-end: 11;
         display: flex;
         justify-content: space-around;
-        align-items: center;  
+        align-items: baseline;
         text-transform: uppercase;
-        
-        &__dropdown {
-            display: none;
-        }
+
         &__icon {
             color: $link-color;
         }
+
+        &__dropdownlink {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
     }
+
+    .promotion {
+        grid-column: 1 / span 2;
+        background-color: $darkgrey;
+        align-items: center;
+        justify-content: center;
+        padding: 60px;
+        margin-top: 60px;
+
+        h4 {
+            color: $primary-bg;
+        }
+    }
+
+    .topNavigation__dropdown {
+        display: none;
+        transition: 2s ease;
+
+
+        & .topNavigation__link {
+            padding: 12px 0px;
+        }
+
+        & .topNavigation__heading {
+            padding-bottom: 32px;
+        }
+
+        & div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .topNavigation__dropdownlink:hover .topNavigation__dropdown {
+        position: absolute;
+        top: 30px;
+        display: grid;
+        width: 470px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fff;
+        box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1);
+        z-index: 30;
+    }
+
     .searchbar {
         grid-column-start: 11;
         grid-column-end: 13;
         width: 130px;
-    height: 30px;
-    padding: 7px 12px;
-    background-color: transparent;
-    border: 1px solid $borderwhite;
+        height: 30px;
+        padding: 7px 12px;
+        background-color: transparent;
+        border: 1px solid $borderwhite;
     }
 }
-
-

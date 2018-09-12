@@ -66,5 +66,24 @@ footer {
         display: flex;
         justify-content: center;
         height: 45px;
+    &__wrapper {
+        @include primary-grid(repeat(4, 1fr));
+        width: 1170px;
+        align-self: center;
     }
+    &__link:first-child{
+        grid-column: 1 / span 1;
+
+    }
+    &__link:nth-child(2) {
+        grid-column: 3 / span 1;
+        justify-self: end;
+    }
+    &__link:nth-child(3) {
+        grid-column: 4 / span 1;
+        justify-self: end;
+    }
+
+    }
+
 }

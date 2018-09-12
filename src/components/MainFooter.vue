@@ -49,9 +49,11 @@
   
     </div>
       <section class="secondaryfooter">
-    <p class="secondaryfooter__link"> &copy; 2016 Avenua Fashion</p>
+          <div class="secondaryfooter__wrapper">
+    <p class="secondaryfooter__link"> &copy; 2016 Avenua Fashion&trade;</p>
     <p class="secondaryfooter__link">Design by RobbyDesign.com</p>
     <p class="secondaryfooter__link">Dev by Loremipsum.com</p>
+    </div>
     </section>
     </footer>
 </template>

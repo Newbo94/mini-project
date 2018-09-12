@@ -25,7 +25,7 @@
         <nav>
             <div class="toplogo"><router-link to="/" class="toplogo__link"><strong>Avenue </strong>Fashion</router-link> </div>
             <ul class="topNavigation">
-                <li><a href="#" class="topNavigation__link">Men</a>
+                <li class="topNavigation__dropdownlink"><a href="#" class="topNavigation__link">Men</a>
                     <font-awesome-icon icon="angle-down" class="topNavigation__icon"></font-awesome-icon>
 
                 <div class="topNavigation__dropdown">
@@ -46,12 +46,35 @@
                         <a href="#" class="topNavigation__link">Toursers</a>
                     </div>
                     <div class="promotion">
-                        <h4 class="promotion__heading">Autumn sale! Up to 50% off</h4>
+                        <h4 class="promotion__heading"> <strong>Autumn sale!</strong> <br> Up to 50% off</h4>
                     </div>
                 </div>
                 </li>
-                <li><a href="#" class="topNavigation__link"> Womens</a></li>
-                <li><router-link to="/brand" class="topNavigation__link">The Brand</router-link></li>
+    <li class="topNavigation__dropdownlink"><a href="#" class="topNavigation__link">women</a>
+                    <font-awesome-icon icon="angle-down" class="topNavigation__icon"></font-awesome-icon>
+
+                <div class="topNavigation__dropdown">
+                    <div>
+                        <p class="topNavigation__heading">Casual</p>
+                        <a href="#" class="topNavigation__link">Jackets</a>
+                        <a href="#" class="topNavigation__link">Hoodies</a>
+                        <a href="#" class="topNavigation__link">Polo Shirt</a>
+                        <a href="#" class="topNavigation__link">Sportswear</a>
+                        <a href="#" class="topNavigation__link">Chinos</a>
+                        <a href="#" class="topNavigation__link">T-Shirts</a>
+                    </div>
+                    <div>
+                        <p class="topNavigation__heading">Formal</p>
+                        <a href="#" class="topNavigation__link">Jackets</a>
+                        <a href="#" class="topNavigation__link">Shirts</a>
+                        <a href="#" class="topNavigation__link">Suits</a>
+                        <a href="#" class="topNavigation__link">Toursers</a>
+                    </div>
+                    <div class="promotion">
+                        <h4 class="promotion__heading"> <strong>Autumn sale!</strong> <br> Up to 50% off</h4>
+                    </div>
+                </div>
+                </li>                <li><router-link to="/brand" class="topNavigation__link">The Brand</router-link></li>
                 <li><a href="#" class="topNavigation__link">Local stores</a></li>
                 <li><a href="#" class="topNavigation__link">Look Book</a></li>
             </ul>

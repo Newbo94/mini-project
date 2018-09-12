@@ -84,3 +84,12 @@ strong {
 img {
     width: 100%;
 }
+
+select {
+   
+    border: 0;
+    border-radius: 0px;
+    /* border: 1px solid; */
+    outline: 1px solid;
+    background-color: transparent;
+}

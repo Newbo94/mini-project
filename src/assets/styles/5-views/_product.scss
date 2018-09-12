@@ -4,31 +4,159 @@
     margin-top: 64px;
     margin-bottom: 64px;
 
-    &__imgwrapper {
-        grid-column: 1 / span 6;   
+    input {
+        @include input();
     }
+
+    &__title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    &__description {
+        margin: 32px 0px;
+
+        li {
+            list-style-type: disc;
+            padding: 5px 0px;
+        }
+    }
+
+    &__imgwrapper {
+        grid-column: 1 / span 6;
+    }
+
     &__contentwrapper {
         grid-column: 7 / span 6;
     }
+
     &__review {
-        display: flex; 
-        justify-content: space-between;
+        display: flex;
         align-items: center;
-    }   
+        margin: 32px 0px;
+    }
+
     &__share {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        padding: 0px 13px;
     }
+
     &__price {
         display: flex;
+        margin-bottom: 42px;
+
         &--reduced {
-            text-decoration: line-through; 
+            text-decoration: line-through;
+        }
+
+        h3 {
+            font-size: 2rem;
+            padding-right: 12px;
         }
     }
+
     &__tags {
         display: flex;
         align-items: center;
+
+        a {
+            padding: 0px 2px;
+        }
     }
 
+    &__reviews {
+        display: flex;
+        align-items: center;
+
+        p {
+            padding: 0px 13px;
+        }
+    }
+
+    &__addreview {
+        padding: 0px 13px;
+    }
+
+    &__socialicon {
+        margin: 0px 6px;
+    }
+
+    &__stock,
+    &__tags,
+    &__code {
+        margin: 10px 0px;
+
+        h4 {
+            font-size: 0.86rem;
+        }
+    }
+
+    &__options {
+        display: flex;
+        margin-bottom: 63px;
+    }
+
+    &__color,
+    &__size,
+    &__qty {
+        margin-right: 32px;
+
+        select {
+            width: 150px;
+            border: 0;
+            border-radius: 0px;
+            outline: 1px solid $font-color;
+            height: 33px;
+        }
+
+        P {
+            text-transform: uppercase;
+        }
+    }
+
+    &__qty {
+        input {
+            width: 70px;
+            height: 33px;
+            border: 0;
+            border-radius: 0px;
+            outline: 1px solid $font-color;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tabwrapper {
+        grid-column: 1 / span 12;
+    }
+
+    &__tabsbuttons {
+        background-color: $lightgrey;
+        height: 45px;
+        text-transform: uppercase;
+        color: $heading-color;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+
+        .active {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            color: $primary-bg;
+        }
+
+        a {
+            font-weight: 800;
+            margin-right: 63px;
+            padding-left: 15px;
+        }
+    }
 }
