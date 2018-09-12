@@ -82,7 +82,9 @@ export default {
 
   data() {
     return {
-      activetab: 1
+      activetab: 1,
+      product: null
+
     }
   }
 };
