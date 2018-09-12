@@ -81,3 +81,25 @@
         }
     }
 }
+
+
+//Reponsiv
+@media  screen and (max-width: 750px) {
+    .loginwrapper { 
+        margin: 0 25px;
+        .register {
+            grid-column: 1 / span 12;
+            margin-top: 100px;
+            padding-left: 0px;
+            border: none;
+        }
+    
+        .signin {
+            grid-column: 1 / span 12;
+            margin-top: 62px;
+        }
+
+    }
+ 
+
+}

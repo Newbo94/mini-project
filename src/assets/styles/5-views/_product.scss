@@ -160,3 +160,37 @@
         }
     }
 }
+
+
+//Responsive
+
+@media  screen and (max-width: 750px) {
+
+    .singleproduct {
+        max-width: 450px;
+        margin: 0px 25px;
+        &__imgwrapper {
+            grid-column: 1 / span 12;
+        }
+        &__review {
+            flex-direction: column;
+            align-items: baseline;
+        }
+
+        &__contentwrapper {
+            grid-column: 1 / span 12;
+        }
+
+        &__options {
+            flex-direction: column;
+        }
+        &__tabsbuttons {
+            flex-direction: column;
+            height: auto;
+            a {
+                padding: 30px 0px;
+            }
+        }
+    }
+
+}

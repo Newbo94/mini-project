@@ -93,3 +93,48 @@
     height: 560px;
     grid-gap: 30px;
 }
+
+//Reponsive 
+@media screen and (max-width: 750px) {
+    .heroSection {
+        background-position: center;
+
+        &__title {
+            font-size: 5rem;
+            letter-spacing: 5rem;
+            margin-right: -3rem;
+        }
+    }
+
+    .productwrapper {
+        grid-template-rows: auto;
+
+        .product {
+            grid-column: 1 / span 12 !important;
+            grid-row: auto !important;
+            height: 350px;
+        }
+    }
+
+    .lookbookwrapper {
+        height: auto;
+        grid-template-columns:  1fr;
+
+
+        .lookbook {
+            grid-column: 1 / span 1;
+            height: 450px;
+        }
+    }
+
+    .home {
+        .tabs {
+            width: 100%;
+            flex-flow: column;
+            a {
+                padding: 20px;
+            }
+        }
+       
+    }
+}

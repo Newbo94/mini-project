@@ -4,12 +4,13 @@
         <div class="topBanner">
             <ul class="currencyDropdown currencyDropdown--dropdown">
                 Currency:
-                <li class="currencyDropdown--active">GBP</li>
-                <div class="currencyDropdown__content">
-                    <li class="currencyDropdown__content--hovered"><a href="#">EURO</a></li> 
-                    <li class="currencyDropdown__content--hovered"><a href="#">DKK</a></li>
-                </div>
+                <select name="Currency" id="currencyDropdown" class="currencyDropdown">
+                    <option class="currencyDropdown__content" value="GBP">GBP</option>
+                    <option class="currencyDropdown__content" value="EURO">EURO</option>
+                    <option class="currencyDropdown__content" value="DKK">DKK</option>
                 <font-awesome-icon icon="angle-down" class="currencyDropdown__icon"></font-awesome-icon>
+
+                </select>
             </ul>
             <div class="userLogin">
                 <router-link to="/sign-up" class="userLogin__item"> Register</router-link>

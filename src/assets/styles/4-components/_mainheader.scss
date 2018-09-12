@@ -18,6 +18,7 @@
     color: $link-color;
     transition: $main-transition;
     cursor: pointer;
+    outline: none;
 
     &--active {
         margin: 0px 5px;
