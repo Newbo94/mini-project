@@ -138,7 +138,6 @@
         display: none;
         transition: 2s ease;
 
-
         & .topNavigation__link {
             padding: 12px 0px;
         }
@@ -173,5 +172,44 @@
         padding: 7px 12px;
         background-color: transparent;
         border: 1px solid $borderwhite;
+    }
+
+    .hamburgermenu {
+        display: none;
+    }
+}
+
+// Reponsive 
+@media screen and (max-width: 750px) {
+    .mainheader {
+        .topBanner {
+            .userLogin {
+                grid-column: 4 / span 5;
+            }
+
+            .currencyDropdown {
+                grid-column: 1 / span 3;
+            }
+
+            .cart {
+                grid-column: 9 / span 4;
+            }
+        }
+
+        .toplogo {
+            grid-column: 1 / span 10;
+            justify-self: center;
+        }
+
+        .topNavigation,
+        .searchbar {
+            display: none;
+        }
+
+        .hamburgermenu {
+            display: block;
+            grid-column: 11 / span 13;
+            display: block;
+        }
     }
 }

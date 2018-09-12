@@ -8,8 +8,7 @@
                     <option class="currencyDropdown__content" value="GBP">GBP</option>
                     <option class="currencyDropdown__content" value="EURO">EURO</option>
                     <option class="currencyDropdown__content" value="DKK">DKK</option>
-                <font-awesome-icon icon="angle-down" class="currencyDropdown__icon"></font-awesome-icon>
-
+                    <font-awesome-icon icon="angle-down" class="currencyDropdown__icon"></font-awesome-icon>
                 </select>
             </ul>
             <div class="userLogin">
@@ -80,6 +79,8 @@
                 <li><a href="#" class="topNavigation__link">Look Book</a></li>
             </ul>
             <input class="searchbar" type="search" placeholder="Search...">
+            <font-awesome-icon icon="bars" class="hamburgermenu" size="2x"></font-awesome-icon>
+
         </nav>
     </header>
 
