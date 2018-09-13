@@ -2,7 +2,7 @@
 
     <div class="product">
         <figure class="product__item">
-            <figcaption class="product__price">{{price}} </figcaption>
+            <figcaption class="product__price">&pound;{{price}} </figcaption>
               <img class="product__thumbnail product__thumbnail--hovered" :src="thumb1" alt="test">
             <img class="product__thumbnail product__thumbnail--hovered" :src="thumb2" alt="test">
             <img class="product__image  " :src="img" alt="test">

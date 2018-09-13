@@ -4,11 +4,22 @@
     grid-template-rows: repeat(4, 1fr);
     margin-top: 63px;
     margin-bottom: 126px;
+    & h4 {
+       font-size: 1.2rem;
+    padding-bottom: 1rem;
+     font-weight: 400;
+     text-transform: uppercase;
+    }
+     h6 {
+         padding: 1rem 0rem;
+     }
 
     &__img {
         grid-column: 1 / span 6;
         grid-row: 1 / span 4;
         width: 100%;
+        object-fit: cover;
+        height: 100%;
     }
 
     &__content {
