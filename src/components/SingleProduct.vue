@@ -17,6 +17,7 @@
               <font-awesome-icon icon="shopping-cart" class="product__icon" size="1x"></font-awesome-icon>
               <font-awesome-icon icon="heart" class="product__icon" size="1x"></font-awesome-icon>
               <font-awesome-icon icon="times" class="product__icon" size="1x"></font-awesome-icon>
+
         </div>
         </figure>
     </div>

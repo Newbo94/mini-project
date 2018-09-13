@@ -19,9 +19,9 @@
 
     <div class="content">
         <div v-if="activetab === 1" class="tabcontent">
-              <div class="productwrapper">
-             <singleproduct v-for="products in product" :key="products.productId" :price="products.productPrice" :description="products.productSubName"  :title="products.productName" :img="products.productImg" :thumb1="products.productThumb[0]" :thumb2="products.productThumb[1]"></singleproduct>
-            </div>
+                <listproduct/>
+             <!-- <singleproduct v-for="products in product" :key="products.productId" :price="products.productPrice" :description="products.productSubName"  :title="products.productName" :img="products.productImg" :thumb1="products.productThumb[0]" :thumb2="products.productThumb[1]"></singleproduct> -->
+            
         </div>
         <div v-if="activetab === 2" class="tabcontent">
            Tab two
@@ -52,38 +52,26 @@ consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
 Elementum metus facilisis ut phasellu." :img="require('@/assets/images/standard/photo_silhouette.png')"></lookbookpreview>
             </section>
 
-            <tab></tab> 
     </div>
 </template>
 
 <script>
-import axios from "axios";
 import singleproduct from "@/components/SingleProduct.vue";
 import lookbookpreview from "@/components/LookBookPreview.vue";
+import listproduct from "@/components/ListProduct.vue";
 
 export default {
   name: "home",
 
   components: {
     singleproduct,
-    lookbookpreview
-  },
-
-  mounted() {
-    this.getData();
-  },
-  methods: {
-    getData() {
-      axios
-        .get("products.json")
-        .then(response => (this.product = response.data));
-    }
+    lookbookpreview,
+    listproduct
   },
 
   data() {
     return {
       activetab: 1,
-      product: null
 
     }
   }

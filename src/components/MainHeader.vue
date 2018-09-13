@@ -25,7 +25,7 @@
         <nav>
             <div class="toplogo"><router-link to="/" class="toplogo__link"><strong>Avenue </strong>Fashion</router-link> </div>
             <ul id="mainnav" class="topNavigation">
-                <li class="topNavigation__dropdownlink"> <router-link to="/product" class="topNavigation__link"> Men</router-link>
+                <li class="topNavigation__dropdownlink">    <a href="#">Men</a>
 
                     <font-awesome-icon icon="angle-down" class="topNavigation__icon"></font-awesome-icon>
 

@@ -4,9 +4,10 @@ import Home from './views/Home.vue'
 import Brand from './views/Brand.vue'
 import Product from './views/ProductItem.vue'
 import signup from './views/sign-up.vue'
-import test from './views/test.vue'
 
 Vue.use(Router)
+
+
 
 export default new Router({
   mode: 'history',
@@ -24,7 +25,7 @@ export default new Router({
 
     },
     {
-      path: '/product',
+      path: '/product/:id',
       name: 'product',
       component: Product
     },
@@ -34,11 +35,12 @@ export default new Router({
       name: 'signup',
       component: signup
     },
-    {
-      path: '/test',
-      name: 'test',
-      component: test
-    }
 
-  ]
-})
+  
+
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
+});
+
